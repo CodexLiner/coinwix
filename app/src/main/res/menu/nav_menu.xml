@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_home_selector"
+        android:id="@+id/homeButtonNav"
+        android:title="Home"/>
+    <item
+        android:icon="@drawable/ic_exchange_selector"
+        android:id="@+id/ExchangeButtonNav"
+        android:title="Exchange"/>
+    <item
+        android:icon="@drawable/ic_coins_selector"
+        android:id="@+id/HistoryButtonNav"
+        android:title="History"/>
+    <item
+        android:icon="@drawable/ic_setting_selector"
+        android:id="@+id/SettingButtonNva"
+        android:title="Settings"/>
+
+
+</menu>

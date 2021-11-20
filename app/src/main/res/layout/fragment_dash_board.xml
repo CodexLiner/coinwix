@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.NavFragments.DashBoardFragment">
+
+    <ScrollView
+        android:paddingBottom="50dp"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/aboutLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/home_activity_shape_all"
+                android:elevation="0.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.jackandphantom.circularimageview.CircleImage
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile"
+                        app:shadow_radius="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="Gopal Meena"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/ic_baseline_notifications_24" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/portofolioUI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutLayout"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/home_activity_shape_all"
+                android:elevation="0.5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:textStyle="normal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="MY MONEY"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="$1250"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="$ +100 today"
+                            android:textColor="#048E47"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="end|center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|end"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_shape_ig2"
+                            android:gravity="center"
+                            android:text="ADD MONEY" />
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|end"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/button_shape_ig2"
+                            android:gravity="center"
+                            android:text="BUY BITCOIN" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/adui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/portofolioUI"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/home_activity_shape_all"
+                android:elevation="0.5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/addemo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/topcurrrec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adui"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/home_activity_shape_all"
+                android:elevation="0.5dp">
+
+                <LinearLayout
+                    android:id="@+id/linilayoutcurre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_weight="1"
+                        android:text="@string/top_currencies"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:layout_marginEnd="15dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/see_all"
+                        android:textColor="@color/purple_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/linilayoutcurre"
+                    android:gravity="center">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/topCurrName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:overScrollMode="never"
+                        android:scrollbars="horizontal" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/recentVisited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topcurrrec"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/home_activity_shape_all"
+                android:elevation="0.5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:text="@string/recent_views"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <include layout="@layout/recent_view_layout" />
+
+                <include layout="@layout/recent_view_layout" />
+
+                <include layout="@layout/recent_view_layout" />
+
+                <include layout="@layout/recent_view_layout" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="0.5dp"
+                android:background="@drawable/home_activity_shape_all"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/recentVisited">
+                <LinearLayout
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:layout_gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_gravity="center|left"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_btc_p2p" />
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="20sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="4dp"
+                            android:letterSpacing="0.04"
+                            android:text="@string/begin_trading_line"
+                            android:layout_gravity="center|top"/>
+                        <Button
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/radius_background"
+                            android:layout_width="75dp"
+                            android:layout_height="40dp"
+                            android:text="begin"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="-20dp"
+                            android:textColor="@color/purple_700"
+                            android:gravity="center"
+                            android:layout_gravity="bottom|end"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

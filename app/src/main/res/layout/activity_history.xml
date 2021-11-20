@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.exchnage_activity">
+
+    <RelativeLayout
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/History_home_heading_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/home_activity_shape_all">
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Recent Logs"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/history_tablayout"
+                style="@style/MineCustomTabText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/tt"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:tabGravity="fill"
+                app:tabIndicator="@drawable/tab_layout_bg"
+                app:tabIndicatorColor="@color/purple_200"
+                app:tabIndicatorGravity="center"
+                app:tabIndicatorHeight="40dp"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/History_home_heading_rel"
+            android:background="@drawable/home_activity_shape_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/histor_tab_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollIndicators="none" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:menu="@menu/nav_menu"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
