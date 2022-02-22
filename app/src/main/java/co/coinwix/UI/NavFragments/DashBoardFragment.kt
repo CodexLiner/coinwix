@@ -65,7 +65,6 @@ class DashBoardFragment : Fragment() {
         val mainHandler = Handler(Looper.getMainLooper())
         mainHandler.post(object : Runnable {
             override fun run() {
-
                 if (layoutManager.findFirstCompletelyVisibleItemPosition() < adapter.itemCount - 1){
                     layoutManager.smoothScrollToPosition( topCurrencyRecyclerView , RecyclerView.State() , layoutManager.findLastVisibleItemPosition() + 1)
                 }else if(layoutManager.findFirstCompletelyVisibleItemPosition() == adapter.itemCount - 1){
